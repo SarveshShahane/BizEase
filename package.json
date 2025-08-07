@@ -1,14 +1,14 @@
 {
-  "name": "ease-of-business",
+  "name": "biz-ease",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Multi-platform social media posting application with Telegram and Reddit integration",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test-reddit": "node test-reddit.js",
-    "test-linkedin": "node test-linkedin.js",
-    "debug-linkedin": "node debug-linkedin-auth.js"
+    "start": "node dev-server.js",
+    "dev": "node dev-server.js",
+    "deploy": "vercel --prod",
+    "vercel-build": "echo 'Build complete'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

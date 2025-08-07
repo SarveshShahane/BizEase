@@ -24,11 +24,16 @@ A modern, streamlined social media posting application that allows you to share 
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Local Development
+
+#### Prerequisites
 
 - Node.js (v14 or higher)
 - npm or yarn
 - Telegram Bot Token
+- Reddit API credentials
+
+#### Installation
 - Reddit API credentials
 
 ### Installation
@@ -203,6 +208,47 @@ nodemon server.js
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## 🌐 Deployment
+
+### Deploy to Vercel
+
+This application is optimized for Vercel deployment with serverless functions:
+
+1. **Install Vercel CLI**:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Login and Deploy**:
+   ```bash
+   vercel login
+   vercel
+   ```
+
+3. **Set Environment Variables**:
+   Configure the same environment variables in your Vercel dashboard:
+   - `TELEGRAM_BOT_TOKEN`
+   - `TELEGRAM_CHAT_ID`
+   - `REDDIT_CLIENT_ID`
+   - `REDDIT_CLIENT_SECRET`
+   - `REDDIT_USERNAME`
+   - `REDDIT_PASSWORD`
+   - `REDDIT_SUBREDDIT`
+
+4. **Production Deploy**:
+   ```bash
+   npm run deploy
+   ```
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+### Alternative Deployment Options
+
+- **Heroku**: Compatible with minor modifications
+- **Railway**: Works out of the box
+- **DigitalOcean App Platform**: Requires port configuration
+- **AWS Lambda**: Use with serverless framework
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -224,7 +270,7 @@ If you encounter any issues or have questions:
 
 ---
 
-**Made with ❤️ for easy social media management**
+**Made for easy social media management**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
